@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --color-navy: #061A2B;
+  --color-navy-surface: #0B2540;
+  --color-offwhite: #F7F7F2;
+  --gold-gradient: linear-gradient(135deg, #7A5A00 0%, #FFD56A 25%, #FFF2B0 50%, #FFD56A 75%, #7A5A00 100%);
+}
+
+html,body,#root{height:100%}
+
+body{
+  background: var(--color-navy);
+  color: var(--color-offwhite);
+}
+
+/* Shiny gold button variant */
+.btn-gold{
+  background-image: var(--gold-gradient);
+  color: #061A2B;
+  border-radius: 9999px;
+  box-shadow: 0 4px 18px rgba(250,200,50,0.08);
+  background-size: 200% 100%;
+  transition: background-position 400ms ease, transform 160ms ease;
+  position:relative;
+  overflow:hidden;
+  display: inline-block;
+}
+.btn-gold:hover{background-position: 100% 0; transform: translateY(-2px)}
+
+/* animated sheen pseudo-element */
+.btn-gold::after{
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -30%;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.08), rgba(255,255,255,0.28), rgba(255,255,255,0.08));
+  transform: rotate(25deg) translateX(-120%);
+  transition: transform 900ms cubic-bezier(.2,.9,.2,1);
+  pointer-events: none;
+}
+.btn-gold:hover::after{transform: rotate(25deg) translateX(120%)}
+
+/* Outline navy button with gold border */
+.btn-outline{
+  background: transparent;
+  border: 1px solid rgba(255,213,106,0.22);
+  color: var(--color-offwhite);
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+}
+
+/* Subtle card lift */
+.card {
+  background: var(--color-offwhite);
+  color: #061A2B;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 6px 20px rgba(3,10,18,0.5);
+}
+
+/* Bubbly background elements container */
+.bubbles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.bubble{
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(40px);
+  opacity: 0.12;
+}
+.gold-glint{
+  background: radial-gradient(circle at 30% 30%, rgba(255,230,150,0.9), rgba(255,200,80,0.5), transparent 50%);
+  filter: blur(28px);
+  opacity: 0.06;
+}
+
+/* Gentle bubble float animation */
+.bubble-anim{animation: floaty 12s linear infinite}
+@keyframes floaty{
+  0%{transform: translateY(0) translateX(0) scale(1)}
+  50%{transform: translateY(-12px) translateX(6px) scale(1.02)}
+  100%{transform: translateY(0) translateX(0) scale(1)}
+}
+
+/* accessible focus ring */
+:focus{outline:none}
+:focus-visible{box-shadow: 0 0 0 4px rgba(255,213,106,0.14); border-radius: 8px}

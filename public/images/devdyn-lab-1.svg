@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" rx="20" fill="#0B2540" />
+  <text x="40" y="80" fill="#FFD56A" font-size="28" font-family="Inter, sans-serif">DevDyn Lab — Timeline + Signals</text>
+  <rect x="40" y="110" width="720" height="240" fill="#061A2B" rx="12" />
+</svg>
