@@ -10,29 +10,6 @@ export default function Home(){
   return (
     <>
       <div className="grid gap-12">
-        {/* Education & Availability - Top Section */}
-        <section className="pt-8">
-          <div className="grid md:grid-cols-3 gap-6 bg-gradient-to-br from-blue-950/20 via-navy-800 to-blue-900/20 p-8 rounded-3xl border border-blue-700/20 shadow-xl">
-            <div className="md:col-span-2">
-              <h2 className="text-2xl font-bold mb-4" style={{color: '#D4AF37'}}>Education</h2>
-              <div className="space-y-3">
-                <div>
-                  <h3 className="text-xl font-semibold text-offwhite">Bachelor of Science in Computational Media</h3>
-                  <p className="text-lg text-offwhite/90 font-medium mt-1">Georgia Institute of Technology</p>
-                  <p className="text-sm text-offwhite/70 mt-2">Graduating May 2027</p>
-                  <p className="text-sm text-offwhite/70">Thread in AI + Interaction Design</p>
-                  <p className="text-sm text-offwhite/70">Minor in Business Administration</p>
-                </div>
-              </div>
-            </div>
-            <div className="border-l border-offwhite/10 pl-6">
-              <h2 className="text-2xl font-bold mb-4" style={{color: '#D4AF37'}}>Availability</h2>
-              <p className="text-lg text-offwhite/90 font-medium">Available for Summer 2026 & Fall 2026 internships</p>
-              <p className="text-sm text-offwhite/70 mt-2">In-person, remote, or hybrid</p>
-            </div>
-          </div>
-        </section>
-        
         {/* Hero */}
         <section>
           <Hero />

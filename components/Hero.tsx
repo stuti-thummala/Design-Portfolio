@@ -43,22 +43,22 @@ export default function Hero(){
             <div className="w-16 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mb-8"></div>
             
             {/* Education and Availability Grid */}
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="grid md:grid-cols-2 gap-12 mb-12 py-8 border-y border-amber-400/20">
               <div>
-                <h3 className="text-amber-400 font-semibold text-sm mb-3 uppercase tracking-wide">Education</h3>
-                <div className="space-y-1 text-offwhite">
-                  <p className="text-base font-semibold">Bachelor of Science in Computational Media</p>
-                  <p className="text-base font-semibold">Georgia Institute of Technology</p>
-                  <p className="text-sm text-offwhite/60 mt-2">Graduating May 2027</p>
+                <h3 className="text-amber-400 font-semibold text-xs mb-4 uppercase tracking-widest">Education</h3>
+                <div className="space-y-2 text-offwhite">
+                  <p className="text-lg font-semibold leading-snug">Bachelor of Science in Computational Media</p>
+                  <p className="text-base font-medium text-offwhite/90">Georgia Institute of Technology</p>
+                  <p className="text-sm text-offwhite/60 mt-3">Graduating May 2027</p>
                   <p className="text-sm text-offwhite/60">Thread in AI + Interaction Design</p>
                   <p className="text-sm text-offwhite/60">Minor in Business Administration</p>
                 </div>
               </div>
-              <div className="border-l border-amber-400/30 pl-8">
-                <h3 className="text-amber-400 font-semibold text-sm mb-3 uppercase tracking-wide">Availability</h3>
-                <div className="space-y-2 text-offwhite/80">
-                  <p className="font-semibold text-offwhite">Available for Summer 2026</p>
-                  <p className="text-sm">Full-time internships in product design</p>
+              <div className="border-l border-amber-400/30 pl-12">
+                <h3 className="text-amber-400 font-semibold text-xs mb-4 uppercase tracking-widest">Availability</h3>
+                <div className="space-y-3 text-offwhite/90">
+                  <p className="font-semibold text-offwhite text-base">Available for Summer 2026</p>
+                  <p className="text-sm leading-relaxed">Full-time internships in product design</p>
                   <p className="text-sm text-offwhite/60">In-person, remote, or hybrid</p>
                 </div>
               </div>
