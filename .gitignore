@@ -1,1 +1,14 @@
-node_modules/
+node_modules/.next/
+.env.local
+.env.*.local
+*.log
+.DS_Store
+*.gz
+*.dzst
+coverage/
+.vscode/
+.idea/
+*.iml
+.next/
+*/.bin/
+*node_modules/

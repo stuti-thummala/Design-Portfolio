@@ -10,7 +10,7 @@ export default function Resume(){
         <p className="text-sm text-offwhite/80 mt-2">Product Designer + Developer — available for Summer 2026 & Fall 2026 internships (in-person / remote / hybrid)</p>
       </div>
       <div className="flex gap-3">
-        <a href="/images/RESUME 2026 Stuti Thummala.pdf" target="_blank" rel="noopener noreferrer" className="btn-gold px-4 py-2">Download PDF</a>
+        <a href="/images/Stuti Thummala Resume 2026.pdf" target="_blank" rel="noopener noreferrer" className="btn-gold px-4 py-2">Download PDF</a>
         <a href="mailto:sthummala7@gatech.edu" className="btn-outline px-4 py-2">Email</a>
         <a href="https://www.linkedin.com/in/stuti-thummala/" target="_blank" className="btn-outline px-4 py-2">LinkedIn</a>
       </div>
